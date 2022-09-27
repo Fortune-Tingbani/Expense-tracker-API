@@ -1,7 +1,7 @@
 const User=require ("../models/userSchema")
 const bcrypt = require("bcrypt")
 const {validate}=require("../config/Validator")
-
+const generateToken=require("../utils/generateToken")
 
 
 

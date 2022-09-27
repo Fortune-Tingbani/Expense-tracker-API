@@ -1,10 +1,10 @@
-const Account=require("../models/income.expenseSchema")
+const Account=require("../models/accountSchema")
 
 
 
 const createAccount= async (req, res) => {
     const newAccount = new Account({
-        amount: req.body.amount,
+        income: req.body.income,
         note:req.body.note,
     })
     await newAccount.save()

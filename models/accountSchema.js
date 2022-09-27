@@ -1,4 +1,4 @@
-const { text } = require("express");
+
 const mongoose = require("mongoose");
 const { string } = require("yup");
 
@@ -10,10 +10,12 @@ const accountSchema= mongoose.Schema({
         require: true,
     },
     note: {
-        type: Text,
+        type: String,
         require: true,
     },
     
+},{
+    timestamps:true
 })
 
 const Account = mongoose.model("Account", accountSchema)

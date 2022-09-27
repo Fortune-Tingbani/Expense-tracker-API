@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const { string } = require("yup");
 
 
-const uesrSchema= mongoose.Schema({
+const uesrSchema= new mongoose.Schema({
     username: {
         type: String,
         unique: true,
