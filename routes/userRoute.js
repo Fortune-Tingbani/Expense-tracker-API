@@ -7,7 +7,7 @@ const router = Router();
 
 router.route("/register").post(Register)
 router.route("/login").post(loginUser)
-router.route("/").get(getUsers)
+router.route("/allusers").get(getUsers)
 
 
 
